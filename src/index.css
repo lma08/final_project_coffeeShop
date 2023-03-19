@@ -1,13 +1,240 @@
+.App {
+    display: flex;
+    justify-content: space-around;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #C3D8C7;
+    margin: 0;
+}
+.block {
+    text-align: center;
+    padding-right: 40px;
+    font-family: 'Bitter', serif;
+    color: #1f3a31;
+    border-right: #1f3a31 5px double;
+    margin-left: 30px;
+}
+.block1 {
+    width: 200px;
+    border-bottom: #1f3a31 5px double;
+}
+.block1 h2 {
+    text-transform: uppercase;
+    text-shadow: #1f3a31 3px 3px 3px;
+}
+.blockItems {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.blockOneItem {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 22%;
+}
+.itemImg {
+    max-width: 170px;
+    border-radius: 50%;
+    box-shadow: #1f3a31 20px 5px 30px;
+}
+.categoryBtn:hover {
+    font-size: larger;
+    cursor: pointer;
+}
+.categorySelectedBtn {
+    border: #1f3a31 3px double;
+    border-radius: 10px;
+}
+.description {
+    text-align: center;
+}
+.btn_more {
+    border: none;
+    background: none;
+    color: #1f3a31;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.btn_more:hover {
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: #1f3a31 5px double;
+    align-items: center;
+    padding-right: 30%;
+}
+.link {
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1f3a31;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+.logo {
+    color: #f5f5f5;
+    font-size: 25px;
+    border: 1px solid #1f3a31;
+    background-color: #1f3a31;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 30px;
+    font-family: 'Special Elite', cursive;
+}
+.deleteIcon {  
+    margin-left: 10px;
+    width: 20px;
+}
+.deleteIcon:hover {
+    cursor: pointer;
+    width: 22px;
+}
+.btnQuantity {
+    border-radius: 10px;
+    border: 2px double #1f3a31;
+    background: none;
+    margin: 5px;
+    width: 40px;
+}
+.btnAddItem {
+    border-radius: 10px;
+    border: 2px double #1f3a31;
+    background-color: #1f3a31;
+    color: #f5f5f5;
+    padding: 5px;
+    margin: 5px;
+}
+.btnQuantity:hover {
+    cursor: pointer;
+}
+.btnAddItem:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+.about {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    color: #1f3a31;
+    font-family: 'Bitter', serif;
+}
+.about p {
+    line-height: 28px;
+    text-align: justify;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Bitter', serif;
+}
+.slider img {
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: #1f3a31 20px 10px 30px;
+}
+.btnArrow {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #1f3a31;
+    padding: 20px;
+}
+.btnArrow:hover {
+    cursor: pointer;
+}
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    color: #1f3a31;
+    font-family: 'Bitter', serif;
+}
+.contact p {
+    margin-bottom: 5px;
+}
+.contact a {
+    text-decoration: none;
+    color: #1f3a31;
+    cursor: pointer;
+}
+.contact h4 {
+    margin-bottom: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media all and (max-width:900px) {
+    .itemImg {
+        width: 100px;
+    }
+    .block1 {
+        width: 120px;
+    }
+    .blockItems {
+        padding: 5px;
+    }
+    .blockOneItem {
+        margin-bottom: 20px;
+        padding: 0px;
+        width: 35%;
+    }
+    nav {
+        padding-right: 20%;
+    }
+}
+@media all and (max-width:500px) {
+    .itemImg {
+        width: 80px;
+    }
+    .block1 {
+        width: 80px;
+        font-size: 10px;
+    }
+    .blockItems {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .blockOneItem {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+    nav {
+        padding-right: 0%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .logo {
+        font-size: 16px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .deleteIcon {
+        width: 12px;
+    }
+    .deleteIcon:hover {
+        width: 15px;
+    }
+    .slider img {
+        width: 300px;
+    }
+    .btnArrow {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .about {
+        width: 90%;
+        margin-left: 10px;
+    }
+    .contact {
+        width: 90%;
+        margin-left: 10px;
+    }
 }
