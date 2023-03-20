@@ -14,7 +14,7 @@ const Items = () => {
                 if (selectedCategory === 'All Menu') return true;
                 return selectedCategory === element.category;
             })
-            .map((element, id) => <Item key={id} element={element}/>)}
+            .map((element) => <Item key={element.id} element={element}/>)}
         </div>
     )
 }

@@ -5,7 +5,7 @@ const AllCategories = () => {
         <div className="block1">
             <h2>Start your day right!</h2>
             {['All Menu', 'Hot Coffee', 'Iced Coffee', 'Hot Tea', 'Bakery', 'Sandwiches'].map (
-                (category, id) => <Filter category={category} key={id}/>
+                (category, index) => <Filter category={category} key={index}/>
             )}
         </div>
     )

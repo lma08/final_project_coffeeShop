@@ -10,8 +10,8 @@ const Cart = () => {
     return (
         <div>
             <h2>Your Cart</h2>
-            <h3>Total: $ {totalPrice}</h3>
-            {cartItems.map ((cartItem, id) => <CartItem key={id} cartItem={cartItem}/>)}
+            <h3>Total: $ {totalPrice.toFixed(2)}</h3>
+            {cartItems.map ((cartItem) => <CartItem key={cartItem.id} cartItem={cartItem}/>)}
         </div>
     )
 }

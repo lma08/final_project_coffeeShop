@@ -22,7 +22,7 @@ const Item = ({element}) => {
                 <button className='btn_more' onClick={()=> showTextBtn(element)}>
                 {element.showMore ? 'show less' : 'show more'}</button>
             </p>
-            <p><strong>$ {element.price}</strong></p>
+            <p><strong>$ {element.price.toFixed(2)}</strong></p>
             <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
             <button className="btnAddItem" onClick={() => dispatch(addItemToCart({element, quantity}))}>Add To Cart</button>
         </div>
